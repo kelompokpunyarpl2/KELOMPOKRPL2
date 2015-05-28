@@ -83,8 +83,13 @@
           </div>
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
+<<<<<<< HEAD
             <li>
               <a href="dashboard.html">
+=======
+            <li class='active'>
+              <a href="index.html">
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
               </a>
             </li>
@@ -94,20 +99,36 @@
               </a>
               <ul class="treeview-menu">
 				<li><a href="kelola_asrama.html">Kelola Jumlah Asrama</a></li>
+<<<<<<< HEAD
 				<li><a href="last_stat.html">Laporan Inventaris Asrama</a></li>
 				<li><a href="laporan_masuk.html">Laporan Kerusakan</a></li>
 				<li><a href="laporan_masuk.html">Laporan Perbaikan</a></li>
               </ul>
             </li>
 			<li class="treeview active">
+=======
+				<li><a href="horizontal_menu.html">Statistik Terakhir</a></li>
+				<li><a href="language_switch.html">Laporan Kerusakan</a></li>
+				<li><a href="language_switch.html">Laporan Perbaikan</a></li>
+              </ul>
+            </li>
+			<li class="treeview">
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
               <a href="#">
                 <i class="fa fa-laptop"></i> <span>Gudang</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
+<<<<<<< HEAD
 				<li><a href="gudang.html">Inventaris Gudang</a></li>
 				<li><a href="input_gudang.html">Input</a></li>
 				<li><a href="laporan_masuk.html">Laporan Masuk</a></li>
 				<li><a href="laporan_distribusi.html">Laporan Distribusi</a></li>
+=======
+				<li><a href="kelola_asrama.html">Inventaris Gudang</a></li>
+				<li><a href="horizontal_menu.html">Input</a></li>
+				<li><a href="language_switch.html">Laporan Masuk</a></li>
+				<li><a href="language_switch.html">Laporan Distribusi</a></li>
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
               </ul>
             </li>
             <li class="treeview">
@@ -150,11 +171,17 @@
 <div class="col-md-12">
 	<section class="panel">
 		<div class='panel-body'>
+<<<<<<< HEAD
 				<h4>Jenis Barang Baru?</h4>
 				<input type='checkbox' name='hehe' onchange='mari_cek()' checked >
 				<br>
 				<br>
 			<form action='' method='GET'>
+=======
+			<form action='' method='GET'>
+				<h4>Jenis Barang Baru?</h4>
+				<input type='checkbox' name='hehe' onchange='mari_cek()' checked data-indeterminate="true">
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
 				<div class='col-md-12' id='form1'>
 					<label>Nama Barang</label>
 					<input type='text' name='nama' class='form-control'>
@@ -162,6 +189,7 @@
 					<input type='text' name='satuan' class='form-control'>
 					<label>Jumlah</label>
 					<input type='text' name='jumlah' class='form-control'>
+<<<<<<< HEAD
 					<br>
 					<button class='btn btn-primary btn-lg'>Input Barang</button>
 			</form>
@@ -182,6 +210,11 @@
 					<button class='btn btn-primary btn-lg'>Input Barang</button>
 			</form>
 				</div>
+=======
+					<button class='btn btn-primary btn-lg'>Input Barang</button>
+				</div>
+			</form>
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
 		</div>
 	</section>
 </div>
@@ -221,8 +254,17 @@
 
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 	<script src="plugins/gauge/gauge.js"></script>
+<<<<<<< HEAD
 
 	<script>
+=======
+    <script src="dist/js/pages/dashboard2.js" type="text/javascript"></script>
+
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js" type="text/javascript"></script>
+	<!--common script init for all pages-->
+ <script>
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
 		function init()
 		{
 			$("[name='hehe']").bootstrapSwitch();
@@ -237,9 +279,15 @@
             m=checkTime(m);
             s=checkTime(s);
 			if(s%2==0)
+<<<<<<< HEAD
             document.getElementById('jam_admin').innerHTML="&nbsp;"+h+":<span style='zoom:1%'>&nbsp;</span>"+m;
             else
 			document.getElementById('jam_admin').innerHTML="&nbsp;"+h+" "+m;
+=======
+            document.getElementById('jam_admin').innerHTML=h+":<span style='zoom:1%'>&nbsp;</span>"+m;
+            else
+			document.getElementById('jam_admin').innerHTML=h+" "+m;
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
             t=setTimeout(function(){startTime()},500);
         }
 
@@ -254,6 +302,7 @@
 		
 		function mari_cek()
 		{
+<<<<<<< HEAD
 			if(document.getElementsByName('hehe')[0].checked==false)
 			{
 				$( "#form1" ).fadeOut( 310, function() {
@@ -266,6 +315,11 @@
 				$( "#form2" ).fadeOut( 310, function() {
 					$( "#form1" ).fadeIn( 300 );
 				  });
+=======
+			if(document.getElementsByName('hehe')[0].checked==true)
+			{
+				
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
 			}
 		}
 		

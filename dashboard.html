@@ -90,7 +90,11 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class='active'>
+<<<<<<< HEAD
               <a href="dashboard.html">
+=======
+              <a href="index.html">
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
               </a>
             </li>
@@ -100,9 +104,15 @@
               </a>
               <ul class="treeview-menu">
 				<li><a href="kelola_asrama.html">Kelola Jumlah Asrama</a></li>
+<<<<<<< HEAD
 				<li><a href="last_stat.html">Laporan Inventaris Asrama</a></li>
 				<li><a href="kerusakan.html">Laporan Kerusakan</a></li>
 				<li><a href="perbaikan.html">Laporan Perbaikan</a></li>
+=======
+				<li><a href="horizontal_menu.html">Statistik Terakhir</a></li>
+				<li><a href="language_switch.html">Laporan Kerusakan</a></li>
+				<li><a href="language_switch.html">Laporan Perbaikan</a></li>
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
               </ul>
             </li>
 			<li class="treeview">
@@ -110,10 +120,17 @@
                 <i class="fa fa-laptop"></i> <span>Gudang</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
+<<<<<<< HEAD
 				<li><a href="gudang.html">Inventaris Gudang</a></li>
 				<li><a href="input_gudang.html">Input</a></li>
 				<li><a href="laporan_masuk.html">Laporan Masuk</a></li>
 				<li><a href="laporan_distribusi.html">Laporan Distribusi</a></li>
+=======
+				<li><a href="kelola_asrama.html">Inventaris Gudang</a></li>
+				<li><a href="horizontal_menu.html">Input</a></li>
+				<li><a href="language_switch.html">Laporan Masuk</a></li>
+				<li><a href="language_switch.html">Laporan Distribusi</a></li>
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
               </ul>
             </li>
             <li class="treeview">
@@ -460,9 +477,15 @@
             m=checkTime(m);
             s=checkTime(s);
 			if(s%2==0)
+<<<<<<< HEAD
             document.getElementById('jam_admin').innerHTML="&nbsp;"+h+":<span style='zoom:1%'>&nbsp;</span>"+m;
             else
 			document.getElementById('jam_admin').innerHTML="&nbsp;"+h+" "+m;
+=======
+            document.getElementById('jam_admin').innerHTML=h+":<span style='zoom:1%'>&nbsp;</span>"+m;
+            else
+			document.getElementById('jam_admin').innerHTML=h+" "+m;
+>>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
             t=setTimeout(function(){startTime()},500);
         }
 

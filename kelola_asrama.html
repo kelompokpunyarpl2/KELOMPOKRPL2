@@ -9,6 +9,13 @@
     <!-- /////////////////////////////////////////-->
      <link href="plugins/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="plugins/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- ///////////////////////////////////////////-->
+    <link href="plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <!-- jvectormap -->
+    <link href="plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- Daterange picker -->
+    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
     <link href="dist/css/AdminLTE.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
@@ -82,35 +89,20 @@
           </div>
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-<<<<<<< HEAD
-            <li>
-              <a href="dashboard.html">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-              </a>
-            </li>
-            <li class="treeview active">
-=======
             <li class='active'>
               <a href="index.html">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
               </a>
             </li>
             <li class="treeview">
->>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
               <a href="#">
                 <i class="fa fa-laptop"></i> <span>Asrama</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
 				<li><a href="kelola_asrama.html">Kelola Jumlah Asrama</a></li>
-<<<<<<< HEAD
-				<li><a href="last_stat.html">Laporan Inventaris Asrama</a></li>
-				<li><a href="kerusakan.html">Laporan Kerusakan</a></li>
-				<li><a href="perbaikan.html">Laporan Perbaikan</a></li>
-=======
 				<li><a href="horizontal_menu.html">Statistik Terakhir</a></li>
 				<li><a href="language_switch.html">Laporan Kerusakan</a></li>
 				<li><a href="language_switch.html">Laporan Perbaikan</a></li>
->>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
               </ul>
             </li>
 			<li class="treeview">
@@ -118,17 +110,10 @@
                 <i class="fa fa-laptop"></i> <span>Gudang</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-<<<<<<< HEAD
-				<li><a href="gudang.html">Inventaris Gudang</a></li>
-				<li><a href="input_gudang.html">Input</a></li>
-				<li><a href="laporan_masuk.html">Laporan Masuk</a></li>
-				<li><a href="laporan_distribusi.html">Laporan Distribusi</a></li>
-=======
 				<li><a href="kelola_asrama.html">Inventaris Gudang</a></li>
 				<li><a href="horizontal_menu.html">Input</a></li>
 				<li><a href="language_switch.html">Laporan Masuk</a></li>
 				<li><a href="language_switch.html">Laporan Distribusi</a></li>
->>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
               </ul>
             </li>
             <li class="treeview">
@@ -153,16 +138,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Laporkan
-            <small>Kerusakan</small>
+            Asrama
+            <small>Unand</small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-<<<<<<< HEAD
-            <li class="active">Asrama</li>
-=======
->>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
-            <li class="active">Laporkan Kerusakan</li>
+            <li class="active">Kelola Asrama</li>
           </ol>
         </section>
 
@@ -172,153 +153,89 @@
 <section class="wrapper">
 <!--mini statistics start-->
 <div class="row">
-<<<<<<< HEAD
-	
-=======
 	<div class='col-md-12'>
 		<div class="alert alert-success alert-dismissible" id='alertnya' style='display:none' role="alert">
 		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		  <strong>Sukses!</strong> Data berhasil diinputkan.
 		</div>
 	</div>
->>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
 	<div class="col-md-12">
 		<section class="panel">
-			<form class="form-horizontal" role="form">
-				<div class='panel-body'>
-					<div class='row'>
-					<div class='col-md-9'>
-						<div class="form-group">
-							<label for="asrama" class="col-lg-2 col-sm-2 control-label">Asrama</label>
-							<div class="col-lg-10">
-								<select style='color:#555'id="asrama" class='form-control'>
-									<option>Asrama 1</option>
-<<<<<<< HEAD
-									<option>Asrama 2</option>	
-=======
-									<option>Asrama 2</option>
->>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
-									<option>Asrama 3</option>
-									<option>Asrama 4</option>
-									<option>Asrama 5</option>
-									<option>Asrama 6</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="asrama" class="col-lg-2 col-sm-2 control-label">Lantai</label>
-							<div class="col-lg-10">
-								<select style='color:#555'id="asrama" class='form-control'>
-									<option>Lantai 1</option>
-									<option>Lantai 2</option>
-									<option>Lantai 3</option>
-									<option>Lantai 4</option>
-									<option>Lantai 5</option>
-									<option>Lantai 6</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="asrama" class="col-lg-2 col-sm-2 control-label">Kamar</label>
-							<div class="col-lg-10">
-								<select style='color:#555'id="asrama" class='form-control'>
-									<option>Kamar 1</option>
-									<option>Kamar 2</option>
-									<option>Kamar 3</option>
-									<option>Kamar 4</option>
-									<option>Kamar 5</option>
-									<option>Kamar 6</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="asrama" class="col-lg-2 col-sm-2 control-label">Kategori Inventaris</label>
-							<div class="col-lg-10">
-<<<<<<< HEAD
-								<select style='color:#555' class='form-control' id='kate' onchange="cekkate()">
-									<option value='1'>Tidak Dalam Daftar</option>
-=======
-								<select style='color:#555'id="asrama" class='form-control'>
->>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
-									<option>Lemari</option>
-									<option>Kamar 2</option>
-									<option>Kamar 3</option>
-									<option>Kamar 4</option>
-									<option>Kamar 5</option>
-									<option>Kamar 6</option>
-								</select>
-							</div>
-						</div>
-<<<<<<< HEAD
-						<div class="form-group" id='jen' style='display:none'>
-							<label for="asrama" class="col-lg-2 col-sm-2 control-label">Jenis Inventaris</label>
-							<div class="col-lg-10">
-								<select style='color:#555' id="jenis" class='form-control' onchange='cekjenis()'>
-									<option value='1'>Tidak Dalam Daftar</option>
-									<option>Gagang Pintu</option>
-									<option>Pintu</option>
-									<option>Papan Atas</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group" id='jum' >
-							<label for="asrama" class="col-lg-2 col-sm-2 control-label">Jumlah Kerusakan</label>
-							<div class="col-lg-10">
-								<select style='color:#555;display:none'id="jumlah" class='form-control'>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-								</select>
-								<input type='number' min="1" style='color:#555;' class='form-control' id='jumlah1'>
-=======
-						<div class="form-group">
-							<label for="asrama" class="col-lg-2 col-sm-2 control-label">Jenis Inventaris</label>
-							<div class="col-lg-10">
-								<select style='color:#555'id="asrama" class='form-control'>
-									<option>Gagang Pintu</option>
-									<option>Kamar 2</option>
-									<option>Kamar 3</option>
-									<option>Kamar 4</option>
-									<option>Kamar 5</option>
-									<option>Kamar 6</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="asrama" class="col-lg-2 col-sm-2 control-label">Jumlah Kerusakan</label>
-							<div class="col-lg-10">
-								<select style='color:#555'id="asrama" class='form-control'>
-									<option>1</option>
-									<option>Kamar 2</option>
-									<option>Kamar 3</option>
-									<option>Kamar 4</option>
-									<option>Kamar 5</option>
-									<option>Kamar 6</option>
-								</select>
->>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="inputEmail1" class="col-lg-2 col-sm-2 control-label">Detail Kerusakan</label>
-							<div class="col-lg-10">
-								<input style='color:#555'type='text' class='form-control'>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="inputEmail1" class="col-lg-2 col-sm-2 control-label">Keterangan Kerusakan</label>
-							<div class="col-lg-10">
-								<textarea style='color:#555' class='form-control' row='3'></textarea>
-								<br>
-								<button class='btn btn-primary'>Laporkan Kerusakan ! </button>
-							</div>
-						</div>
-					</div>
-					</div>
+			<div class='panel-body'>
+				<div class="col-md-4">
+					<a class='btn btn-primary btn-lg' data-toggle="modal" href="#myModal"><span style='zoom:80%'><i class='fa fa-plus-circle'></i> Tambah Asrama</span></a>
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title">Tambah Asrama</h4>
+										<form action='kelola_asrama.html' method='get'>
+                                        </div>
+                                        <div class="modal-body">
+												<input class="form-control" name="nama" placeholder='Nama Asrama Baru' style='color:#555'required>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+                                            <button class="btn btn-primary" onclick="sessionStorage.setItem('input','true');">Save changes</button>
+                                        </div>
+										</form>
+                                    </div>
+                                </div>
+                            </div>
 				</div>
-			</form>
+				<div class='col-md-8'>
+					<span style='margin-left:3px' class="label label-danger pull-right inbox-notification">Laporan Kerusakan</span>
+					<span style='margin-left:3px' class="label label-success pull-right inbox-notification">Jumlah Kamar</span>
+					<span style='margin-left:3px' class="label label-primary pull-right inbox-notification">Jumlah Lantai</span>
+				</div>
+				<br></br></br>
+				<ul class="nav nav-pills nav-stacked mail-nav">
+					<li>
+						<a href='#'>Asrama 1
+							<span style='margin-left:3px' class="label label-danger pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-success pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-primary pull-right inbox-notification">9</span>
+						</a>
+					</li>
+					<li>
+						<a href='#'>Asrama 2
+							<span style='margin-left:3px' class="label label-danger pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-success pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-primary pull-right inbox-notification">9</span>
+						</a>
+					</li>
+					<li>
+						<a href='#'>Asrama 3
+							<span style='margin-left:3px' class="label label-danger pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-success pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-primary pull-right inbox-notification">9</span>
+						</a>
+					</li>
+					<li>
+						<a href='#'>Asrama 4
+							<span style='margin-left:3px' class="label label-danger pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-success pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-primary pull-right inbox-notification">9</span>
+						</a>
+					</li>
+					<li>
+						<a href='#'>Asrama 5
+							<span style='margin-left:3px' class="label label-danger pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-success pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-primary pull-right inbox-notification">9</span>
+						</a>
+					</li>
+					<li>
+						<a href='#'>Asrama 6	
+							<span style='margin-left:3px' class="label label-danger pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-success pull-right inbox-notification">9</span>
+							<span style='margin-left:3px' class="label label-primary pull-right inbox-notification">9</span>
+						</a>
+					</li>
+				</ul>
+
+			</div>
 		</section>
 	</div>
 </div>
@@ -373,15 +290,9 @@
             m=checkTime(m);
             s=checkTime(s);
 			if(s%2==0)
-<<<<<<< HEAD
-            document.getElementById('jam_admin').innerHTML="&nbsp;"+h+":<span style='zoom:1%'>&nbsp;</span>"+m;
-            else
-			document.getElementById('jam_admin').innerHTML="&nbsp;"+h+" "+m;
-=======
             document.getElementById('jam_admin').innerHTML=h+":<span style='zoom:1%'>&nbsp;</span>"+m;
             else
 			document.getElementById('jam_admin').innerHTML=h+" "+m;
->>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
             t=setTimeout(function(){startTime()},500);
         }
 
@@ -392,29 +303,7 @@
                 i="0" + i;
             }
             return i;
-<<<<<<< HEAD
-        }
-		function cekkate()
-		{
-			if(document.getElementById('kate').value=='1')
-				$( "#jen" ).fadeOut(300);
-			else
-				$( "#jen" ).fadeIn(300);
-		}	
-		function cekjenis()
-		{
-			if(document.getElementById('jenis').value=='1')
-				$( "#jumlah" ).fadeOut(300,function(){
-				$( "#jumlah1" ).fadeIn(300)
-				});
-			else
-				$( "#jumlah1" ).fadeOut(300,function(){
-				$( "#jumlah" ).fadeIn(300)
-				});
-		}		
-=======
         }		
->>>>>>> d3e64f9b0a20767eec2370e2f5ccbe10b533918d
 </script>
   </body>
 </html>
